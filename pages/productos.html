@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos - TechStore</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/styles/navbar.css" />
+  <link rel="stylesheet" href="/styles/footer.css" />
+  <link rel="stylesheet" href="/styles/productos.css" />
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="barra-navegacion">
+      <div class="container-barra">
+        <div id="logo">
+          <a href="index.html">
+            <img src="/assets/Images/TechStore.png" alt="Logo de TechStore" title="Logo de TechStore" />
+          </a>
+        </div>
+        <div class="container-item">
+          <ul class="menu">
+            <li class="item"><a href="index.html">Inicio</a></li>
+            <li class="has-submenu">
+              <a href="nosotros.html">Sobre nosotros <i class="fas fa-chevron-down"></i></a>
+              <ul class="sub-menu">
+                <li class="item"><a id="preguntas-frecuentes" href="#footer-info">Preguntas frecuentes</a></li>
+                <li class="item"><a id="contacto" href="#footer-contacto">Contacto</a></li>
+              </ul>
+            </li>
+            <li class="item"><a href="productos.html">Productos</a></li>
+            <li class="item"><a href="#">Contacto</a></li>
+          </ul>
+          <div class="extras">
+            <a href="carrito.html"><i class="fas fa-shopping-bag carrito"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenedor-productos">
+    <aside class="sidebar">
+      <h3>Categorías</h3>
+      <ul>
+        <li><button onclick="filtrar('teclado')">Teclados</button></li>
+        <li><button onclick="filtrar('mouse')">Mouses</button></li>
+        <li><button onclick="filtrar('diadema')">Diademas</button></li>
+        <li><button onclick="filtrar('microfono')">Micrófonos</button></li>
+        <li><button onclick="filtrar('todos')">Todos</button></li>
+      </ul>
+    </aside>
+
+    <section class="productos" id="productos-container">
+      <!-- Las tarjetas de productos se insertan con JS -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="/assets/Images/TechStore.png" alt="Logo TechStore" />
+        <p>Tu tienda de confianza en tecnología en Valledupar</p>
+      </div>
+      
+      <div id="footer-info">
+        <details>
+          <summary>¿Qué periféricos comprar primero?</summary>
+          <p>Empieza con un teclado y mouse de calidad. Después considera audífonos o un micrófono.</p>
+        </details>
+        <details>
+          <summary>¿Por qué comprar en TechStore?</summary>
+          <p>Ofrecemos calidad, garantía, atención personalizada y los mejores precios en Valledupar.</p>
+        </details>
+        <details>
+          <summary>Envíos y pagos</summary>
+          <p>Envíos a toda Colombia. Pago con tarjeta, transferencia o efectivo en Valledupar.</p>
+        </details>
+      </div>
+
+      <div id="footer-contacto">
+        <h4>Contáctanos</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Valledupar, Colombia</p>
+        <p><i class="fas fa-envelope"></i> contacto@techstore.com</p>
+        <p><i class="fas fa-phone"></i> +57 300 123 4567</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="/BLL/services/productos.js"></script>
+</body>
+</html>
