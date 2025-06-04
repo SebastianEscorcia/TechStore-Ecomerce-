@@ -1,87 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechStore - tienda de productos tecnológicos en valledupar</title>
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#09f" />
-    <meta
-      name="description"
-      content="Página para comprar periféricos de computadores en valledupar a precios bajos y de buena calidad"
-    />
-    <!-- Open graph para compartir la page-->
-    <meta
-      property="og:title"
-      content="Tienda de periféricos y productos tecnológicos en valledupar"
-    />
-    <meta
-      property="og:description"
-      content="Página para comprar periféricos de computadores en valledupar a precios bajos y de buena calidad"
-    />
-    <meta property="og:img" content="/assets/Images/TechStore.png" />
-    <meta
-      property="og:image:alt"
-      content="Teclado,microfono y mouse de color azul con un subtitulo TechStore"
-    />
-    <link rel="icon" type="image/png" href="/assets/Images/TechStore.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="barra-navegacion">
-        <div class="container-barra">
-          <div id="logo">
-            <a href="index.html">
-              <img
-                title="Logo de TechStore"
-                src="/assets/Images/TechStore.png"
-                alt="Teclado,microfono y mouse de color azul con un subtitulo TechStore"
-              />
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros - TechStore</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/styles/navbar.css" />
+  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="/styles/carrito.css">
+  <link rel="stylesheet" href="/styles/productos_categorias.css">
+  <link rel="stylesheet" href="/styles/productos.css">
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="barra-navegacion">
+      <div class="container-barra">
+        <div id="logo">
+          <a href="index.html">
+            <img src="/assets/Images/TechStore.png" alt="Logo de TechStore" title="Logo de TechStore" />
+          </a>
+        </div>
+        <div class="container-item">
+          <ul class="menu">
+            <li class="item"><a href="index.html">Inicio</a></li>
+            <li class="has-submenu">
+              <a href="nosotros.html">Sobre nosotros <i class="fas fa-chevron-down"></i></a>
+              <ul class="sub-menu">
+                <li class="item"><a id="preguntas-frecuentes" href="#footer-info">Preguntas frecuentes</a></li>
+                <li class="item"> <a id="contacto" href="#footer-contacto">Contacto</a></li>
+              </ul>
+            </li>
+            <li class="item"><a href="productos.html">Productos</a></li>
+            <li class="item"><a href="#">Contacto</a></li>
+          </ul>
+          <div class="extras">
+            <a href="#" class="carrito">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="carrito-badge" id="carrito-badge">0</span>
             </a>
-          </div>
-          <div class="container-item">
-            <ul class="menu">
-              <li class="item">
-                <a href="index.html"> Inicio</a>
-              </li>
-              <li class="has-submenu">
-                <a href="nosotros.html">
-                  Sobre nosotros <i class="fas fa-chevron-down"></i>
-                </a>
-                <ul class="sub-menu">
-                  <li class="item">
-                    <a href="#">preguntas frecuentes</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="item">
-                <a href=""></a>
-              </li>
-              <li class="item">
-                <a href=""></a>
-              </li>
-              <li class="item">
-                <a href=""></a>
-              </li>
-              <li class="item">
-                <a href=""></a>
-              </li>
-              <li class="item">
-                <a href=""></a>
-              </li>
-              <li class="item">
-                <a href=""></a>
-              </li>
-            </ul>
+            <a href="#"><i class="fas fa-search"></i></a>
           </div>
         </div>
-      </nav>
-    </header>
-    <main></main>
-  </body>
+      </div>
+    </nav>
+  </header>
+
+  <main></main>
+
+  <!-- Scripts -->
+  <script src="/BLL/carrito.js"></script>
+</body>
+
 </html>

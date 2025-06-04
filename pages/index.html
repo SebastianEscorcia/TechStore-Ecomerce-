@@ -1,298 +1,261 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechStore - tienda de productos tecnológicos en Valledupar</title>
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/carrusel.css" />
-    <link rel="stylesheet" href="/styles/productos_categorias.css" />
-    <link rel="stylesheet" href="/styles/footer.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore - tienda de productos tecnológicos en Valledupar</title>
 
-    <!-- Meta -->
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#09f" />
-    <meta
-      name="description"
-      content="Página para comprar periféricos de computadores en Valledupar a precios bajos y de buena calidad"
-    />
-    <meta
-      property="og:title"
-      content="Tienda de periféricos y productos tecnológicos en Valledupar"
-    />
-    <meta
-      property="og:description"
-      content="Página para comprar periféricos de computadores en Valledupar a precios bajos y de buena calidad"
-    />
-    <meta property="og:image" content="/assets/Images/TechStore.png" />
-    <meta
-      property="og:image:alt"
-      content="Teclado, micrófono y mouse de color azul con un subtítulo TechStore"
-    />
-    <link rel="icon" type="image/png" href="/assets/Images/TechStore.png" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/styles/navbar.css" />
+  <link rel="stylesheet" href="/styles/carrusel.css" />
+  <link rel="stylesheet" href="/styles/productos_categorias.css" />
+  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="/styles/carrito.css">
 
-    <!-- Íconos -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
+  <!-- Meta -->
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#09f" />
+  <meta name="description"
+    content="Página para comprar periféricos de computadores en Valledupar a precios bajos y de buena calidad" />
+  <meta property="og:title" content="Tienda de periféricos y productos tecnológicos en Valledupar" />
+  <meta property="og:description"
+    content="Página para comprar periféricos de computadores en Valledupar a precios bajos y de buena calidad" />
+  <meta property="og:image" content="/assets/Images/TechStore.png" />
+  <meta property="og:image:alt" content="Teclado, micrófono y mouse de color azul con un subtítulo TechStore" />
+  <link rel="icon" type="image/png" href="/assets/Images/TechStore.png" />
 
-  <body>
-    <header>
-      <nav class="barra-navegacion">
-        <div class="container-barra">
-          <div id="logo">
-            <!--
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="barra-navegacion">
+      <div class="container-barra">
+        <div id="logo">
+          <!--
               <h3>TechStore</h3>  
             -->
-            
-            <a href="index.html">
-              <img
-                src="/assets/Images/TechStore.png"
-                alt="Logo de TechStore"
-                title="Logo de TechStore"
-              />
-            </a>
-          </div>
-          <div class="container-item">
-            <ul class="menu">
-              <li class="item"><a href="index.html">Inicio</a></li>
-              <li class="has-submenu">
-                <a href="nosotros.html"
-                  >Sobre nosotros <i class="fas fa-chevron-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li class="item"><a id="preguntas-frecuentes" href="#footer-info">Preguntas frecuentes</a></li>
-                  <li class="item"> <a id="contacto" href="#footer-contacto">Contacto</a></li>
-                </ul>
-              </li>
-              <li class="item"><a href="productos.html">Productos</a></li>
-              <li class="item"><a href="#">Contacto</a></li>
-            </ul>
-            <div class="extras">
-              <a href="carrito.html"
-                ><i class="fas fa-shopping-bag carrito"></i
-              ></a>
-              <a href="#"><i class="fas fa-search"></i></a>
-            </div>
-          </div>
+
+          <a href="index.html">
+            <img src="/assets/Images/TechStore.png" alt="Logo de TechStore" title="Logo de TechStore" />
+          </a>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <aside class="carrusel-wrapper">
-        <div class="carrusel">
-          <!-- Slide 1 -->
-          <div class="image">
-            <div class="contenido-slide">
-              <div class="texto">
-                <h2>Diademas</h2>
-                <p>
-                  Diademas Corsair para gamers con calidad de sonido y reducción
-                  de ruido.
-                </p>
-              </div>
-              <img
-                src="/assets/Images/diademas_corsair.jpg"
-                alt="Diademas Corsair"
-              />
-            </div>
+        <div class="container-item">
+          <ul class="menu">
+            <li class="item"><a href="index.html">Inicio</a></li>
+            <li class="has-submenu">
+              <a href="nosotros.html">Sobre nosotros <i class="fas fa-chevron-down"></i></a>
+              <ul class="sub-menu">
+                <li class="item"><a id="preguntas-frecuentes" href="#footer-info">Preguntas frecuentes</a></li>
+                <li class="item"> <a id="contacto" href="#footer-contacto">Contacto</a></li>
+              </ul>
+            </li>
+            <li class="item"><a href="productos.html">Productos</a></li>
+            <li class="item"><a href="#">Contacto</a></li>
+          </ul>
+          <div class="extras">
+            <a href="#" class="carrito"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
           </div>
-
-          <!-- Slide 2 -->
-          <div class="image">
-            <div class="contenido-slide">
-              <div class="texto">
-                <h2>Diademas</h2>
-                <p>
-                  Diademas JBL con sonido envolvente RGB ideales para gaming.
-                </p>
-              </div>
-              <img src="/assets/Images/diademas_jbl.jpg" alt="Diademas JBL" />
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="image">
-            <div class="contenido-slide">
-              <div class="texto">
-                <h2>Diademas</h2>
-                <p>
-                  Diademas Logitech RGB perfectas para largas sesiones frente al
-                  PC.
-                </p>
-              </div>
-              <img
-                src="/assets/Images/diademas_logitec.jpg"
-                alt="Diademas Logitech"
-              />
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="image">
-            <div class="contenido-slide">
-              <div class="texto">
-                <h2>Micrófono</h2>
-                <p>Micrófono Fifine ideal para streaming y videollamadas.</p>
-              </div>
-              <img
-                src="/assets/Images/microfono_fifine.jpg"
-                alt="Micrófono Fifine"
-              />
-            </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="image">
-            <div class="contenido-slide">
-              <div class="texto">
-                <h2>Mouse</h2>
-                <p>Mouse Logitech G502 ergonómico con botones programables.</p>
-              </div>
-              <img
-                src="/assets/Images/mouse_logitec.jpg"
-                alt="Mouse Logitech G502"
-              />
-            </div>
-          </div>
-
-          <!-- Slide 6 -->
-          <div class="image">
-            <div class="contenido-slide">
-              <div class="texto">
-                <h2>Teclado</h2>
-                <p>
-                  Teclado HyperX mecánico con retroiluminación roja para juegos.
-                </p>
-              </div>
-              <img
-                src="/assets/Images/teclad_hyperX.webp"
-                alt="Teclado HyperX"
-              />
-            </div>
-          </div>
-
-          <!-- Controles e indicadores -->
-          <button id="control-prev"><i class="fas fa-chevron-left"></i></button>
-          <button id="control-next">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-          <div class="indicadores"></div>
-        </div>
-      </aside>
-
-      <section>
-        <h2>Productos Preferidos por nuestros clientes</h2>
-        <p>Estos son los productos más comprados en nuestra página:</p>
-        <div class="productos">
-          <div class="product">
-            <img
-              src="/assets/Images/teclado-hyperx-alloy-origins-1-1140x676.webp"
-              alt="Teclado HyperX de color negro con luces retro"
-            />
-            <p>
-              Teclado HyperX Alloy Origins con diseño compacto, luces RGB y
-              sonido mecánico profesional.
-            </p>
-          </div>
-          <div class="product">
-            <img
-              src="/assets/Images/teclado_logitec_k360.jpg"
-              alt="Teclado de la marca Logitech k360 económico"
-            />
-            <p>
-              Teclado Logitech K360 económico, ideal para oficinas, estudiantes
-              y uso diario en el hogar.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Categorías destacadas</h2>
-        <div class="categorias">
-          <div class="categoria">
-            <i class="fas fa-keyboard fa-2x"></i>
-            <h4>Teclados</h4>
-            <p>
-              Descubre teclados mecánicos, inalámbricos, retroiluminados y más.
-            </p>
-          </div>
-          <div class="categoria">
-            <i class="fas fa-mouse fa-2x"></i>
-            <h4>Mouses</h4>
-            <p>
-              Mouses gamer, ergonómicos y con botones programables para todo
-              uso.
-            </p>
-          </div>
-          <div class="categoria">
-            <i class="fas fa-headphones fa-2x"></i>
-            <h4>Audífonos</h4>
-            <p>
-              Calidad de sonido envolvente y diseños cómodos para largas
-              sesiones.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="/assets/Images/TechStore.png" alt="Logo TechStore" />
-          <p>Tu tienda de confianza en tecnología en Valledupar</p>
-        </div>
-        
-        <div id="footer-info">
-          <details >
-            <summary>¿Qué periféricos comprar primero?</summary>
-            <p>
-              Lo ideal es empezar con un teclado y mouse de calidad. Son los más
-              usados a diario y mejoran mucho tu experiencia. Después, puedes
-              considerar unos audífonos con micrófono o incluso un micrófono
-              dedicado si haces videollamadas o streaming.
-            </p>
-          </details>
-
-          <details>
-            <summary>¿Por qué comprar en TechStore?</summary>
-            <p>
-              Ofrecemos productos de calidad, garantía, atención personalizada y
-              los mejores precios en Valledupar. Contamos con referencias
-              reconocidas como Logitech, HyperX y Corsair.
-            </p>
-          </details>
-
-          <details>
-            <summary>Envíos y pagos</summary>
-            <p>
-              Realizamos envíos a todo Colombia. Puedes pagar con tarjeta,
-              transferencia o efectivo contraentrega (solo en Valledupar).
-            </p>
-          </details>
-        </div>
-
-        <div id="footer-contacto">
-          <h4>Contáctanos</h4>
-          <p><i class="fas fa-map-marker-alt"></i> Valledupar, Colombia</p>
-          <p><i class="fas fa-envelope"></i> contacto@techstore.com</p>
-          <p><i class="fas fa-phone"></i> +57 300 123 4567</p>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+  <main>
+    <aside class="carrusel-wrapper">
+      <div class="carrusel">
+        <!-- Slide 1 -->
+        <div class="image">
+          <div class="contenido-slide">
+            <div class="texto">
+              <h2>Diademas</h2>
+              <p>
+                Diademas Corsair para gamers con calidad de sonido y reducción
+                de ruido.
+              </p>
+            </div>
+            <img src="/assets/Images/diademas_corsair.jpg" alt="Diademas Corsair" />
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="image">
+          <div class="contenido-slide">
+            <div class="texto">
+              <h2>Diademas</h2>
+              <p>
+                Diademas JBL con sonido envolvente RGB ideales para gaming.
+              </p>
+            </div>
+            <img src="/assets/Images/diademas_jbl.jpg" alt="Diademas JBL" />
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="image">
+          <div class="contenido-slide">
+            <div class="texto">
+              <h2>Diademas</h2>
+              <p>
+                Diademas Logitech RGB perfectas para largas sesiones frente al
+                PC.
+              </p>
+            </div>
+            <img src="/assets/Images/diademas_logitec.jpg" alt="Diademas Logitech" />
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="image">
+          <div class="contenido-slide">
+            <div class="texto">
+              <h2>Micrófono</h2>
+              <p>Micrófono Fifine ideal para streaming y videollamadas.</p>
+            </div>
+            <img src="/assets/Images/microfono_fifine.jpg" alt="Micrófono Fifine" />
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="image">
+          <div class="contenido-slide">
+            <div class="texto">
+              <h2>Mouse</h2>
+              <p>Mouse Logitech G502 ergonómico con botones programables.</p>
+            </div>
+            <img src="/assets/Images/mouse_logitec.jpg" alt="Mouse Logitech G502" />
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="image">
+          <div class="contenido-slide">
+            <div class="texto">
+              <h2>Teclado</h2>
+              <p>
+                Teclado HyperX mecánico con retroiluminación roja para juegos.
+              </p>
+            </div>
+            <img src="/assets/Images/teclad_hyperX.webp" alt="Teclado HyperX" />
+          </div>
+        </div>
+
+        <!-- Controles e indicadores -->
+        <button id="control-prev"><i class="fas fa-chevron-left"></i></button>
+        <button id="control-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="indicadores"></div>
       </div>
-    </footer>
-    <!-- JavaScript -->
-    <script src="/BLL/services/handler_slides.js" defer></script>
-    <script src="/BLL/services/handler_click_info_footer.js"></script>
-  </body>
+    </aside>
+
+    <section>
+      <h2>Productos Preferidos por nuestros clientes</h2>
+      <p>Estos son los productos más comprados en nuestra página:</p>
+      <div class="productos">
+        <div class="product">
+          <img src="/assets/Images/teclado-hyperx-alloy-origins-1-1140x676.webp"
+            alt="Teclado HyperX de color negro con luces retro" />
+          <p>
+            Teclado HyperX Alloy Origins con diseño compacto, luces RGB y
+            sonido mecánico profesional.
+          </p>
+        </div>
+        <div class="product">
+          <img src="/assets/Images/teclado_logitec_k360.jpg" alt="Teclado de la marca Logitech k360 económico" />
+          <p>
+            Teclado Logitech K360 económico, ideal para oficinas, estudiantes
+            y uso diario en el hogar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Categorías destacadas</h2>
+      <div class="categorias">
+        <div class="categoria">
+          <i class="fas fa-keyboard fa-2x"></i>
+          <h4>Teclados</h4>
+          <p>
+            Descubre teclados mecánicos, inalámbricos, retroiluminados y más.
+          </p>
+        </div>
+        <div class="categoria">
+          <i class="fas fa-mouse fa-2x"></i>
+          <h4>Mouses</h4>
+          <p>
+            Mouses gamer, ergonómicos y con botones programables para todo
+            uso.
+          </p>
+        </div>
+        <div class="categoria">
+          <i class="fas fa-headphones fa-2x"></i>
+          <h4>Audífonos</h4>
+          <p>
+            Calidad de sonido envolvente y diseños cómodos para largas
+            sesiones.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="/assets/Images/TechStore.png" alt="Logo TechStore" />
+        <p>Tu tienda de confianza en tecnología en Valledupar</p>
+      </div>
+
+      <div id="footer-info">
+        <details>
+          <summary>¿Qué periféricos comprar primero?</summary>
+          <p>
+            Lo ideal es empezar con un teclado y mouse de calidad. Son los más
+            usados a diario y mejoran mucho tu experiencia. Después, puedes
+            considerar unos audífonos con micrófono o incluso un micrófono
+            dedicado si haces videollamadas o streaming.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Por qué comprar en TechStore?</summary>
+          <p>
+            Ofrecemos productos de calidad, garantía, atención personalizada y
+            los mejores precios en Valledupar. Contamos con referencias
+            reconocidas como Logitech, HyperX y Corsair.
+          </p>
+        </details>
+
+        <details>
+          <summary>Envíos y pagos</summary>
+          <p>
+            Realizamos envíos a todo Colombia. Puedes pagar con tarjeta,
+            transferencia o efectivo contraentrega (solo en Valledupar).
+          </p>
+        </details>
+      </div>
+
+      <div id="footer-contacto">
+        <h4>Contáctanos</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Valledupar, Colombia</p>
+        <p><i class="fas fa-envelope"></i> contacto@techstore.com</p>
+        <p><i class="fas fa-phone"></i> +57 300 123 4567</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="/BLL/services/handler_slides.js" defer></script>
+  <script src="/BLL/services/handler_click_info_footer.js"></script>
+  <script src="/BLL/carrito.js"></script>
+</body>
+
 </html>

@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Productos - TechStore</title>
 
   <!-- Estilos -->
   <link rel="stylesheet" href="/styles/navbar.css" />
   <link rel="stylesheet" href="/styles/footer.css" />
   <link rel="stylesheet" href="/styles/productos.css" />
+  <link rel="stylesheet" href="/styles/carrito.css">
+
 
   <!-- Íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -39,7 +43,10 @@
             <li class="item"><a href="#">Contacto</a></li>
           </ul>
           <div class="extras">
-            <a href="carrito.html"><i class="fas fa-shopping-bag carrito"></i></a>
+            <a href="#" class="carrito">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="carrito-badge" id="carrito-badge">0</span>
+            </a>
             <a href="#"><i class="fas fa-search"></i></a>
           </div>
         </div>
@@ -72,7 +79,7 @@
         <img src="/assets/Images/TechStore.png" alt="Logo TechStore" />
         <p>Tu tienda de confianza en tecnología en Valledupar</p>
       </div>
-      
+
       <div id="footer-info">
         <details>
           <summary>¿Qué periféricos comprar primero?</summary>
@@ -101,5 +108,7 @@
     </div>
   </footer>
   <script src="/BLL/services/productos.js"></script>
+  <script src="/BLL/carrito.js"></script>
 </body>
+
 </html>
